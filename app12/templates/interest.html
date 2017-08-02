@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Points</title>
+    <h1>Points winning</h1>
+</head>
+<style>
+    h1 {
+        font-size: 80px;
+        color: gold;
+    }
+    body {
+        color: darksalmon;
+        background: url('http://all4desktop.com/data_images/original/4236532-background-images.jpg');
+        text-align: center;
+    }
+</style>
+<body>
+    <p align="left">
+        <font size="12px"> Based on recent post user win the  following points:-</font><br>
+        {% for list in l %}
+            <li type="circle" align="left"><font size="20px"> {{ list }}</font></li>
+        {% endfor %}
+    </p>
+
+</body>
+</html>

@@ -1,5 +1,4 @@
 """Instaclone URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
 Examples:
@@ -15,9 +14,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from app12.views import signup_view, login_view, feed_view, post_view, like_view, comment_view
+from app12.views import signup_view, login_view, feed_view, post_view, like_view, comment_view, point_view, logout_view
 
+# defining urls
 urlpatterns = [
+    url('logout', logout_view),
+    url('point', point_view),
     url('comment', comment_view),
     url('like', like_view),
     url('post', post_view),

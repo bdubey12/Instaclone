@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <style>
         h1 {
-            color: darkolivegreen;
+            color: gold;
             font-size: 55px;
         }
         h3 {
-            color: mediumpurple;
-            font-size: 42px;
+            color: saddlebrown;
+            font-size: 35px;
         }
         h4 {
             color: maroon;
@@ -22,7 +22,7 @@
         }
         body {
             text-align: center;
-            background: url("http://freeimagescollection.com/images/backgrounds/multi-colored-background-blur-f5.jpg");
+            background: url('http://all4desktop.com/data_images/original/4236532-background-images.jpg');
         }
         div {
             display: block;
@@ -32,7 +32,7 @@
             font-size: smaller;
             width: 250px;
             height: 25px;
-            background: darkorange;
+            background: sandybrown;
             border: 0px;
             padding: 10px 10px 10px 10px;
             margin-bottom: 10px;
@@ -41,12 +41,12 @@
             font-size: smaller;
             width: 250px;
             height: 25px;
-            background: darkorange;
+            background: sandybrown;
             border: 0px;
             padding: 10px 10px 10px 10px;
         }
         input[type="submit"] {
-            background: royalblue;
+            background: palevioletred;
             color: white;
             border: 0px;
             font-size: smaller;
@@ -61,9 +61,9 @@
             color: blue;
         }
         img {
-            height: 150px;
-            width: 150px;
-            border-radius: 25px;
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
         }
         table{
             border: solid;
@@ -77,7 +77,7 @@
        <title>Instaclone SignUp</title>
         <div class="main">
             <h1>Instagram Clone</h1>
-            <img src="https://www.seeklogo.net/wp-content/uploads/2016/06/Instagram-logo.png">
+            <img src="https://public-assets.envato-static.com/assets/header-footer/social/instagram-7527061010a48c8afcf551be64441f1e32396592b1fdb7bb71572ca65e46e877.svg">
             <h3>Sign Up</h3>
             <h4>{{ today }}</h4>
         </div>
@@ -87,7 +87,7 @@
         <table align="center">
             <tr>
                 <div class="username">
-                   <td><label for="username">Username: </label></td>
+                   <td><label for="username">Username: </label></td>{{ text }}
                    <td><input id="username" type="text" name="username" placeholder="Enter your username" value={{ username }}></td>
                 </div>
             </tr>
