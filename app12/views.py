@@ -21,7 +21,7 @@ def signup_view(request):
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
             print 'Here'
-            #saving data to DB
+            #saving data to DataBase
             user = UserModel(full_name=name, password=make_password(password), email=email, username=username)
             user.save()
             return render(request, 'success.html')
@@ -32,7 +32,7 @@ def signup_view(request):
         form = SignUpForm()
         today = datetime.now()
 
-    return render(request, 'index.html', {'today': today, 'form': form})
+    return render(request, 'index.html', {'today' 'form': form})
 
 
 def login_view(request):

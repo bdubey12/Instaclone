@@ -5,7 +5,7 @@ import uuid
 
 # Create your models here.
 
-# Create a model for user
+#  model for user
 class UserModel(models.Model):
     # email field
     email = models.EmailField();
@@ -23,7 +23,7 @@ class UserModel(models.Model):
 
 
 
-# Create a model for SessionToken
+#  model for SessionToken
 class SessionToken(models.Model):
     #user field
     user = models.ForeignKey(UserModel)
@@ -44,7 +44,7 @@ class SessionToken(models.Model):
 
 
 
-# Create a model for post
+#  model for post
 class PostModel(models.Model):
     #user field
     user = models.ForeignKey(UserModel)
@@ -69,7 +69,7 @@ class PostModel(models.Model):
 
 
 
-# Create a model for liking a post
+#  model for liking  post
 class LikeModel(models.Model):
     #user field
     user = models.ForeignKey(UserModel)
@@ -83,7 +83,7 @@ class LikeModel(models.Model):
 
 
 
-# Create a model for adding a comment
+#  model for adding  comment
 class CommentModel(models.Model):
     user = models.ForeignKey(UserModel)
     post = models.ForeignKey(PostModel)
